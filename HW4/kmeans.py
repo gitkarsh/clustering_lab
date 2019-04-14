@@ -47,7 +47,7 @@ def country_centr(cluster, vectors):
     return centroid
 
 
-def generate(clusters, values):
+def make_clust(clusters, values):
     f = open("C:/Users/akars/clustering_lab/HW4/dimensions_keywords.csv - dimensions_keywords.csv.csv")
     lines = f.read().split('\n')
     k = []
@@ -106,7 +106,7 @@ def main(nameof_file, output_f):
 
     print("SSE: " + str(sse(chcked_clustr, vectors)))
     postdo(final_clustr, output_f)
-    generate(clusters, vectors)
+    make_clust(clusters, vectors)
 
 
 
