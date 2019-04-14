@@ -1,8 +1,8 @@
 import kmeans
 import clusters as utils
 
-choice_dist = utils.pearson
-clusternum = 7
+choice_dist = utils.cosine
+clusternum = 6
 
 def get(cluster, ids):
     if cluster.id < 0:
