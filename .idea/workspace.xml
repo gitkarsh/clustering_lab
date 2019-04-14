@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f55ec3-4595-4ed0-820b-8ebd0c84ad60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW4/bisect_kmeans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW4/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW4/kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW4/bisect_kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW4/bisect_kmeans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processed/finalk_clusters.json" beforeDir="false" afterPath="$PROJECT_DIR$/processed/finalk_clusters.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW4/kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-916">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="206">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -51,10 +49,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW4/bisect_kmeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               <folding>
-                <element signature="e#1#15#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +87,10 @@
     <findStrings>
       <find>k</find>
       <find>get</find>
+      <find>read</find>
+      <find>append</find>
+      <find>app</find>
+      <find>a</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,7 +147,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HW4/kmeans.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HW4/bisect_kmeans.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -161,7 +163,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="kmeans" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="bisect_kmeans" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="clustering_lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,7 +175,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW4/kmeans.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW4/bisect_kmeans.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,17 +379,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4/kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-916">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="18" />
+        <state relative-caret-position="206">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4/bisect_kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
           <folding>
-            <element signature="e#1#15#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
