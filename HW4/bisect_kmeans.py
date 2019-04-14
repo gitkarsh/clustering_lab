@@ -31,7 +31,7 @@ def bisekt(clusters, vectors, distance=utils.euclidean, k=4):
     newclus = utils.kcluster([vectors[index] for index in clusters.pop(indi_clus)], distance=distance, k=2)
     for cluster in newclus:
         for i in range(len(cluster)):
-            cluster[i] = indi_orig[cluster[i]]  # Convert back to original vector indexes
+            cluster[i] = indi_orig[cluster[i]]
 
     return bisekt(clusters + newclus, vectors, distance = distance, k=k)
 
