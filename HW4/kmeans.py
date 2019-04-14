@@ -1,7 +1,7 @@
 import wordcloud
 import clusters as utils
 
-data_range = range(2, 8)  # Useful sub-indexes
+my_rng = range(2, 8)
 num_clusters = 8
 choice_dist = utils.cosine
 
@@ -16,7 +16,7 @@ def readfile(nameof_file):
         arr = line.rstrip().split(',')
 
         countries.append((arr[0], arr[1]))
-        vectors.append([int(arr[i]) for i in data_range])
+        vectors.append([int(arr[i]) for i in my_rng])
 
     my_data.close()
     return countries, vectors
