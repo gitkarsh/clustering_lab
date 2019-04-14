@@ -1,5 +1,6 @@
 import wordcloud
 import clusters as utils
+import word_cloud
 
 my_rng = range(2, 8)
 clusternum = 8
@@ -35,40 +36,6 @@ def postdo(final_clust, postfile):
     output.close()
 
 
-def create_clouds(clusters, vectors):
-    #will create using keywords
-    keyword_file = open("C:/Users/akars/clustering_lab/HW4/dimensions_keywords.csv - dimensions_keywords.csv.csv")
-    lines = keyword_file.read().split('\n')
-    keywords = []
-    for i in range(len(lines)):
-        if i == 0:
-            continue
-        keywords.append(lines[i].split(',')[1:])
-
-    for j in range(len(clusters)):
-        cluster = clusters[j]
-        words = []
-        centroid = country_centr(cluster, vectors)
-
-        for i in range(len(centroid)):
-            if centroid[i] > 50:
-                label = 0
-            else:
-                label = 1
-
-            words += keywords[i][label].split(' ')
-
-        my_arr = {}
-        for x in words:
-            if x in my_arr:
-                my_arr[x] += 1
-            else:
-                my_arr[x] = 1
-
-        numword = [(w, count/20) for w, count in my_arr.items()]
-        wordcloud.WordCloud("clouds/{}.png".format(str(j)), numword)
-
-
 def country_centr(cluster, vectors):
     centroid = [0 for i in range(len(vectors[0]))]
 
@@ -78,6 +45,34 @@ def country_centr(cluster, vectors):
 
     centroid = [round(centroid[i]/len(cluster)) for i in range(len(centroid))]
     return centroid
+
+
+def generate(clusters, values):
+    f = open("C:/Users/akars/clustering_lab/HW4/dimensions_keywords.csv - dimensions_keywords.csv.csv")
+    lines = f.read().split('\n')
+    k = []
+    for i in range(len(lines)):
+        if i == 0:
+            continue
+        k.append(lines[i].split(',')[1:])
+    for j in range(len(clusters)):
+        cluster = clusters[j]
+        word = []
+        centroid = country_centr(cluster, values)
+        for i in range(len(centroid)):
+            if centroid[i] > 50:
+                label = 0
+            else:
+                label = 1
+            word += k[i][label].split(' ')
+        d = {}
+        for w in word:
+            if w in d:
+                d[w] += 1
+            else:
+                d[w] = 1
+        word_counts = [(w, count/20) for w, count in d.items()]
+        word_cloud.create_cloud("{}.png".format(str(j)), word_counts)
 
 
 def sse(clusters, vectors):
@@ -92,8 +87,8 @@ def sse(clusters, vectors):
     return score
 
 
-def main(input_f, output_f):
-    (countries, vectors) = readfile(input_f)
+def main(nameof_file, output_f):
+    (countries, vectors) = readfile(nameof_file)
     print(countries)
     print(vectors)
 
@@ -111,7 +106,8 @@ def main(input_f, output_f):
 
     print("SSE: " + str(sse(chcked_clustr, vectors)))
     postdo(final_clustr, output_f)
-    create_clouds(clusters, vectors)
+    generate(clusters, vectors)
+
 
 
 if __name__ == "__main__":
