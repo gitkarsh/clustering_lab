@@ -33,7 +33,7 @@ def bisekt(clusters, vectors, distance=utils.euclidean, k=4):
         for i in range(len(cluster)):
             cluster[i] = indi_orig[cluster[i]]
 
-    return bisekt(clusters + newclus, vectors, distance = distance, k=k)
+    return bisekt(clusters + newclus, vectors, distance = distance, k=clusternum)
 
 
 def main(nameof_file):
