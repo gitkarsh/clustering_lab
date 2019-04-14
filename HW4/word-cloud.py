@@ -1,8 +1,6 @@
 from __future__ import print_function
 warned_of_error = False
 import csv
-from nltk.corpus import stopwords
-import pygame
 import simplejson
 from pytagcloud import create_tag_image, make_tags
 
@@ -29,17 +27,16 @@ def create_cloud (oname, words,maxsize=120, fontname='Lobster'):
     create_tag_image(tags, oname, size=(1800, 1200), fontname=fontname)
 
 
-#example of using word cloud for first 10 rows of courses
 def main():
     word_counts = {}
     stopword_nltk = stopwords.words('english')
-    with open('course-descriptions2.csv') as csvfile:
+    with open("C:/Users/akars/clustering_lab/processed/preprocessed.csv") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=',', quotechar='"')
 
         count = 0
         for row in csvreader:
             count += 1
-            if count > 10:
+            if count > 109:
                 break
             text = row[2]
             clean_chars = [c.lower() if c.isalpha() else ' ' for c in text]
@@ -50,8 +47,8 @@ def main():
                     prev_count = word_counts.get(w,0)
                     word_counts[w] = prev_count+1
 
-    word_counts = [(w,count/10) for w,count in word_counts.items()]
-    create_cloud('cloud_courses.png', word_counts)
+    word_counts = [(w,count/109) for w,count in word_counts.items()]
+    create_cloud('C:/Users/akars/clustering_lab/public_html/cloud_clusters.png', word_counts)
 
 
 if __name__ == "__main__":

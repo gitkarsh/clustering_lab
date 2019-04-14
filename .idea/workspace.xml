@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f55ec3-4595-4ed0-820b-8ebd0c84ad60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HW4/bisect_kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW4/bisect_kmeans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW4/hierclust.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW4/hierclust.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW4/word-cloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW4/word-cloud.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW4/hierclust.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="221">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -84,10 +83,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW4/word-cloud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-592" />
+            <state relative-caret-position="343">
+              <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -125,6 +126,7 @@
         <option value="$PROJECT_DIR$/HW4/kmeans.py" />
         <option value="$PROJECT_DIR$/HW4/bisect_kmeans.py" />
         <option value="$PROJECT_DIR$/HW4/hierclust.py" />
+        <option value="$PROJECT_DIR$/HW4/word-cloud.py" />
       </list>
     </option>
   </component>
@@ -164,7 +166,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HW4/hierclust.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HW4/word-cloud.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -180,7 +182,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="hierclust" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="word-cloud" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="clustering_lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,7 +194,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW4/hierclust.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW4/word-cloud.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -349,11 +351,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW4/word-cloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-592" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/processed/country_clusters.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -409,11 +406,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4/hierclust.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW4/word-cloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
         </state>
       </provider>
     </entry>
