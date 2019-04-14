@@ -2,7 +2,7 @@ import wordcloud
 import clusters as utils
 
 my_rng = range(2, 8)
-num_clusters = 8
+clusternum = 8
 choice_dist = utils.cosine
 
 
@@ -97,10 +97,10 @@ def main(input_f, output_f):
     print(countries)
     print(vectors)
 
-    clusters = utils.kcluster(vectors, distance=choice_dist, k = num_clusters)
+    clusters = utils.kcluster(vectors, distance=choice_dist, k = clusternum)
     chcked_clustr = []
     final_clustr = []
-    for i in range(num_clusters):
+    for i in range(clusternum):
         if len(clusters[i]) == 0:
             continue
 
