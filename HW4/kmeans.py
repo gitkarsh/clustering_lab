@@ -74,7 +74,7 @@ def country_centr(cluster, vectors):
 
     for index in cluster:
         for i in range(len(vectors[0])):
-            centroid[i] += vectors[index][i]  # Store sums
+            centroid[i] += vectors[index][i]
 
     centroid = [round(centroid[i]/len(cluster)) for i in range(len(centroid))]
     return centroid
