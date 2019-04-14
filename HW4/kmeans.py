@@ -1,6 +1,7 @@
+import csv
 import clusters
 
-docs,words,data=clusters.readfile('titles_vectors.txt')
+docs,words,data=clusters.readfile('preprocessed.csv')
 rdata=clusters.rotatematrix(data)
 num_clusters = 2
 print ('Grouping words into {} clusters:'.format(num_clusters))

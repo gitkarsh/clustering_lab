@@ -11,7 +11,7 @@ def readfile(nameof_file):
     my_count = -2
     for line in my_data:
         my_count += 1
-        if my_count == -1:  # Skip headers
+        if my_count == -1:
             continue
 
         arr = line.rstrip().split(',')
