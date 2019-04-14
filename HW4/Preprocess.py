@@ -45,18 +45,18 @@ def chk_near(country, beseen):
 
 #filling using averages(method 2)
 def fill(country):
-    available = list(my_indi)
-    country_missing = []
+    can_chk = list(my_indi)
+    miss_cntry = []
 
     for index in my_indi:
         if country[index] == '':
-            available.remove(index)
-            country_missing.append(index)
+            can_chk.remove(index)
+            miss_cntry.append(index)
 
-    similar_countries = chk_near(country, available)
+    like_cntry = chk_near(country, can_chk)
 
-    for index in country_missing:
-        country[index] = str(round(sum(map(lambda x: int(x[index]), similar_countries))/3))
+    for index in miss_cntry:
+        country[index] = str(round(sum(map(lambda x: int(x[index]), like_cntry))/3))
 
 def main(nameof_file, new_file):
     readfile(nameof_file)
